@@ -1,0 +1,128 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+    font-family: myFirstFont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f0f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+  
+.container {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+  
+.result-box {
+    background: linear-gradient(to bottom, #654de4, #4e00c2);
+    color: white;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+}
+  
+.result-box h2 {
+    font-size: 18px;
+    opacity: 0.8;
+}
+  
+.score-circle {
+    background: radial-gradient(circle, #4e00c2 0%, #654de4 100%);
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.score {
+    font-size: 36px;
+    font-weight: bold;
+}
+  
+.out-of {
+    opacity: 0.7;
+}
+  
+.result-box h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+  
+.result-box .description {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+  
+.summary-box {
+    padding: 40px 30px;
+    width: 300px;
+}
+  
+.summary-box h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+  
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+  
+.reaction {
+    background-color: #fff6f6;
+    color: #e76f51;
+}
+  
+.memory {
+    background-color: #fdfcf4;
+    color: #e9c46a;
+}
+  
+.verbal {
+    background-color: #f1fcf7;
+    color: #2a9d8f;
+}
+  
+.visual {
+    background-color: #f4f5fd;
+    color: #3f51b5;
+}
+  
+.continue-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #654de4, #4e00c2);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+  
+.continue-btn:hover {
+    opacity: 0.9;
+}
